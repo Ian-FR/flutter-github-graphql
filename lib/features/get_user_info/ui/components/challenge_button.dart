@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
 
 class ChallangeButton extends StatelessWidget {
-  final VoidCallback onTap;
-  final String label;
+  const ChallangeButton({
+    super.key,
+    required this.label,
+    this.onTap,
+  });
 
-  const ChallangeButton({super.key, required this.onTap, required this.label});
+  final VoidCallback? onTap;
+  final String label;
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(onPressed: onTap, child: Text(label));
+    return TextButton(
+      onPressed: onTap,
+      child: Text(label),
+    );
   }
 }
