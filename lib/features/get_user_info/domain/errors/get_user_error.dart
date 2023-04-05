@@ -1,0 +1,1 @@
+enum GetUserError { fetchingUser, unexpected }
