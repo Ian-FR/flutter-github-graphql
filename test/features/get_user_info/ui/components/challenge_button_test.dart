@@ -7,8 +7,8 @@ import '../../../../helpers/handlers/tap_handler.dart';
 
 void main() {
   final mockTap = MockTapHandler();
-  group('ChallangeButton >', () {
-    testWidgets('Render ChallangeButton correctly', (tester) async {
+  group('DefaultButton >', () {
+    testWidgets('Render DefaultButton correctly', (tester) async {
       const tLabel = 'Button Label';
       await tester.basePump(const DefaultButton(label: tLabel));
       expect(find.text(tLabel), findsOneWidget);
