@@ -1,4 +1,4 @@
-import 'package:onboarding_challenge/features/get_user_info/domain/errors/get_user_error.dart';
+import 'package:github_graphql_api/features/get_user_info/domain/errors/get_user_error.dart';
 
 class UserDetailsStrings {
   String get title => 'Details';

@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:onboarding_challenge/features/get_user_info/ui/components/get_user_error_component.dart';
+import 'package:github_graphql_api/features/get_user_info/ui/components/get_user_error_component.dart';
 
 import '../../../../helpers/extensions/widget_tester_extensions.dart';
 

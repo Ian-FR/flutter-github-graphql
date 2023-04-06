@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail_image_network/mocktail_image_network.dart';
-import 'package:onboarding_challenge/features/get_user_info/ui/components/user_details_component.dart';
+import 'package:github_graphql_api/features/get_user_info/ui/components/user_details_component.dart';
 
 import '../../../../helpers/extensions/widget_tester_extensions.dart';
 import '../../fixtures/user_fixture.dart';

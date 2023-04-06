@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:onboarding_challenge/core/router.dart';
-import 'package:onboarding_challenge/core/routes.dart';
-import 'package:onboarding_challenge/shared/design_system/ds.dart';
-import 'package:onboarding_challenge/shared/storage/shared_prefs_storage.dart';
-import 'package:onboarding_challenge/shared/strings/strings.dart';
+import 'package:github_graphql_api/core/router.dart';
+import 'package:github_graphql_api/core/routes.dart';
+import 'package:github_graphql_api/shared/design_system/ds.dart';
+import 'package:github_graphql_api/shared/storage/shared_prefs_storage.dart';
+import 'package:github_graphql_api/shared/strings/strings.dart';
 
 import '../components/challenge_button.dart';
 
 class GetUserInfoScreen extends StatefulWidget {
-  const GetUserInfoScreen({super.key});
+  const GetUserInfoScreen({super.key, required this.localStorage});
+
+  final LocalStorage localStorage;
 
   @override
   State<GetUserInfoScreen> createState() => _GetUserInfoScreenState();
@@ -23,7 +25,8 @@ class _GetUserInfoScreenState extends State<GetUserInfoScreen> {
     super.initState();
     setState(() {
       initialUserLogin =
-          localStorage.getString(LocalStorageKeys.userLoginStorageKey);
+          widget.localStorage.getString(LocalStorageKeys.userLoginStorageKey);
+      if (initialUserLogin is String) _loginController.text = initialUserLogin!;
     });
   }
 
@@ -64,7 +67,7 @@ class _GetUserInfoScreenState extends State<GetUserInfoScreen> {
                       Routes.userDetails,
                       arguments: _loginController.text,
                     );
-                    localStorage.setString(
+                    widget.localStorage.setString(
                       LocalStorageKeys.userLoginStorageKey,
                       _loginController.text,
                     );

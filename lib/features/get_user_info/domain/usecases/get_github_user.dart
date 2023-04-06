@@ -1,5 +1,5 @@
 import 'package:graphql/client.dart';
-import 'package:onboarding_challenge/shared/graph_ql/graph_ql.dart';
+import 'package:github_graphql_api/shared/graph_ql/graph_ql.dart';
 
 import '../parsers/user_github_gql_parser.dart';
 import '../entities/user.dart';

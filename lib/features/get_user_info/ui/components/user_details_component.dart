@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:onboarding_challenge/shared/design_system/ds.dart';
-import 'package:onboarding_challenge/shared/strings/strings.dart';
+import 'package:github_graphql_api/shared/design_system/ds.dart';
+import 'package:github_graphql_api/shared/strings/strings.dart';
 
 import '../../domain/entities/user.dart';
 

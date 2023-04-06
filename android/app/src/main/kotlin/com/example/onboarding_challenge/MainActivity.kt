@@ -1,4 +1,4 @@
-package com.example.onboarding_challenge
+package com.example.github_graphql_api
 
 import io.flutter.embedding.android.FlutterActivity
 

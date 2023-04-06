@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:onboarding_challenge/core/routes.dart';
-import 'package:onboarding_challenge/features/get_user_info/domain/usecases/get_github_user.dart';
-import 'package:onboarding_challenge/features/get_user_info/ui/controllers/user_controller.dart';
-import 'package:onboarding_challenge/features/get_user_info/ui/screens/get_user_info_screen.dart';
-import 'package:onboarding_challenge/features/get_user_info/ui/screens/user_details_screen.dart';
-import 'package:onboarding_challenge/features/splash/ui/screens/splash_screen.dart';
+import 'package:github_graphql_api/core/routes.dart';
+import 'package:github_graphql_api/features/get_user_info/domain/usecases/get_github_user.dart';
+import 'package:github_graphql_api/features/get_user_info/ui/controllers/user_controller.dart';
+import 'package:github_graphql_api/features/get_user_info/ui/screens/get_user_info_screen.dart';
+import 'package:github_graphql_api/features/get_user_info/ui/screens/user_details_screen.dart';
+import 'package:github_graphql_api/features/splash/ui/screens/splash_screen.dart';
+import 'package:github_graphql_api/shared/storage/shared_prefs_storage.dart';
 
 class AppRouter {
   static Route<dynamic>? onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.userInfo:
-        return _buildPage(const GetUserInfoScreen());
+        return _buildPage(GetUserInfoScreen(localStorage: localStorage,));
 
       case Routes.userDetails:
         return _buildPage(

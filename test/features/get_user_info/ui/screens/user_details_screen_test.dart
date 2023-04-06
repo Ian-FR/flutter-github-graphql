@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:mocktail_image_network/mocktail_image_network.dart';
-import 'package:onboarding_challenge/features/get_user_info/domain/errors/get_user_error.dart';
-import 'package:onboarding_challenge/features/get_user_info/ui/components/get_user_error_component.dart';
-import 'package:onboarding_challenge/features/get_user_info/ui/components/user_details_component.dart';
-import 'package:onboarding_challenge/features/get_user_info/ui/controllers/user_controller.dart';
-import 'package:onboarding_challenge/features/get_user_info/ui/screens/user_details_screen.dart';
+import 'package:github_graphql_api/features/get_user_info/domain/errors/get_user_error.dart';
+import 'package:github_graphql_api/features/get_user_info/ui/components/get_user_error_component.dart';
+import 'package:github_graphql_api/features/get_user_info/ui/components/user_details_component.dart';
+import 'package:github_graphql_api/features/get_user_info/ui/controllers/user_controller.dart';
+import 'package:github_graphql_api/features/get_user_info/ui/screens/user_details_screen.dart';
 
 import '../../../../helpers/extensions/widget_tester_extensions.dart';
 import '../../fixtures/user_fixture.dart';

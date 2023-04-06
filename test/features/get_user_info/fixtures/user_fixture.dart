@@ -1,5 +1,5 @@
-import 'package:onboarding_challenge/features/get_user_info/domain/entities/user.dart';
-import 'package:onboarding_challenge/features/get_user_info/domain/entities/user_repository.dart';
+import 'package:github_graphql_api/features/get_user_info/domain/entities/user.dart';
+import 'package:github_graphql_api/features/get_user_info/domain/entities/user_repository.dart';
 
 class UserFixture {
   static User get full => const User(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:onboarding_challenge/core/router.dart';
-import 'package:onboarding_challenge/core/routes.dart';
+import 'package:github_graphql_api/core/router.dart';
+import 'package:github_graphql_api/core/routes.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

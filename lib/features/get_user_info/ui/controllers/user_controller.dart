@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:onboarding_challenge/features/get_user_info/domain/usecases/get_github_user.dart';
+import 'package:github_graphql_api/features/get_user_info/domain/usecases/get_github_user.dart';
 
 import '../../domain/entities/user.dart';
 import '../../domain/errors/get_user_error.dart';

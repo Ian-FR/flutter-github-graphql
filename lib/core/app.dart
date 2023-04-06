@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
-import 'package:onboarding_challenge/core/constants.dart';
-import 'package:onboarding_challenge/core/router.dart';
-import 'package:onboarding_challenge/shared/graph_ql/graph_ql.dart';
+import 'package:github_graphql_api/core/constants.dart';
+import 'package:github_graphql_api/core/router.dart';
+import 'package:github_graphql_api/shared/graph_ql/graph_ql.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

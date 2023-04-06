@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:onboarding_challenge/features/get_user_info/ui/controllers/user_controller.dart';
-import 'package:onboarding_challenge/shared/strings/strings.dart';
+import 'package:github_graphql_api/features/get_user_info/ui/controllers/user_controller.dart';
+import 'package:github_graphql_api/shared/strings/strings.dart';
 
 import '../components/get_user_error_component.dart';
 import '../components/user_details_component.dart';

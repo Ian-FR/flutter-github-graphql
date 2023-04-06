@@ -1,6 +1,6 @@
 {
-    "name": "onboarding_challenge",
-    "short_name": "onboarding_challenge",
+    "name": "github_graphql_api",
+    "short_name": "github_graphql_api",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

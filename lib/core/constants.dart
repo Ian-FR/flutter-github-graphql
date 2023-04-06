@@ -1,4 +1,4 @@
-import 'package:onboarding_challenge/core/env.dart';
+import 'package:github_graphql_api/core/env.dart';
 
 class AppConstants {
   const AppConstants._();

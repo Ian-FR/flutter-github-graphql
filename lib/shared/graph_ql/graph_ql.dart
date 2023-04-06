@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
-import 'package:onboarding_challenge/core/constants.dart';
+import 'package:github_graphql_api/core/constants.dart';
 
 class GraphQL {
   late ValueNotifier<GraphQLClient> client;
