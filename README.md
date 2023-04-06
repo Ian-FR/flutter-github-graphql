@@ -10,13 +10,15 @@ A new Flutter project to explore Github GraphQL API using flutter_bloc and clean
 git clone git@github.com:Ian-FR/flutter-github-graphql.git
 ```
 
-- And then we can use the normal build and run procedure
+- And then we can use the normal build and run procedure *
 
 ```
 flutter pub get && \
  flutter run \
  --dart-define="GITHUB_TOKEN=<your-github-personal-token>"
 ```
+
+* To generate a github personal token, visit [Github docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
 ## Getting Started
 
