@@ -13,7 +13,9 @@ git clone git@github.com:Ian-FR/flutter-github-graphql.git
 - And then we can use the normal build and run procedure
 
 ```
-flutter pub get && flutter run
+flutter pub get && \
+ flutter run \
+ --dart-define="GITHUB_TOKEN=<your-github-personal-token>"
 ```
 
 ## Getting Started
