@@ -44,7 +44,8 @@ void main() {
           .called(1);
       expect(find.text(savedLogin), findsOneWidget);
     });
-    testWidgets('Calls setSring when DefaultButton is triggered',
+    testWidgets(
+        'Calls setSring and navigates to second screen when DefaultButton is triggered',
         (tester) async {
       const tipedLogin = 'foo';
       when(() => mockStorage.setString(
