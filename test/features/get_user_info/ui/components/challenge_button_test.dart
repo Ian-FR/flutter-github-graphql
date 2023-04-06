@@ -10,13 +10,13 @@ void main() {
   group('ChallangeButton >', () {
     testWidgets('Render ChallangeButton correctly', (tester) async {
       const tLabel = 'Button Label';
-      await tester.basePump(const ChallangeButton(label: tLabel));
+      await tester.basePump(const DefaultButton(label: tLabel));
       expect(find.text(tLabel), findsOneWidget);
     });
     testWidgets('Calls onTap when button trigger a tap event', (tester) async {
       when(mockTap.onPressed).thenReturn(null);
       const tLabel = 'Button Label';
-      await tester.basePump(ChallangeButton(
+      await tester.basePump(DefaultButton(
         label: tLabel,
         onTap: mockTap.onPressed,
       ));

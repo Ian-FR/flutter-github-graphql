@@ -56,7 +56,7 @@ class _GetUserInfoScreenState extends State<GetUserInfoScreen> {
               ),
               SizedBox(height: ds.spacing.medium),
               Center(
-                child: ChallangeButton(
+                child: DefaultButton(
                   label: strings.getUserInfoForm.getUserInfoButtonLabel,
                   onTap: () {
                     AppRouter.pushNamed(

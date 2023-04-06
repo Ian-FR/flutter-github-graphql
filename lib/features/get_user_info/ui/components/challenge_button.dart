@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ChallangeButton extends StatelessWidget {
-  const ChallangeButton({
+class DefaultButton extends StatelessWidget {
+  const DefaultButton({
     super.key,
     required this.label,
     this.onTap,
