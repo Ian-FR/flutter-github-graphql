@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:onboarding_challenge/features/get_user_info/domain/usecases/get_github_user.dart';
 import 'package:onboarding_challenge/features/get_user_info/ui/controllers/user_controller.dart';
 import 'package:onboarding_challenge/shared/strings/strings.dart';
 
