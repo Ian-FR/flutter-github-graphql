@@ -15,12 +15,13 @@ class UserController extends Cubit<UserState> {
 
   Future<void> fetchUser(String username) async {
     try {
+      emit(const LoadingUser());
       final user = await _fetchUser.call(username);
       Future.delayed(const Duration(milliseconds: 800));
       emit(LoadedUser(user: user));
     } catch (err, st) {
       debugPrint(
-        'Error on Fetch github user: \n  $err  \n\n With stackTrace: \n  $st',
+        'Error on Fetch github user: \n  $err\n\n With stackTrace: \n$st',
       );
       emit(
         ErrorLoadingUser(
