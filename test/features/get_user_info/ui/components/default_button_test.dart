@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:github_graphql_api/features/get_user_info/ui/components/challenge_button.dart';
+import 'package:github_graphql_api/features/get_user_info/ui/components/default_button.dart';
 
 import '../../../../helpers/extensions/widget_tester_extensions.dart';
 import '../../../../helpers/handlers/tap_handler.dart';

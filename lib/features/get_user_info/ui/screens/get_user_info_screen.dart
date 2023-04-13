@@ -5,7 +5,7 @@ import 'package:github_graphql_api/shared/design_system/ds.dart';
 import 'package:github_graphql_api/shared/storage/shared_prefs_storage.dart';
 import 'package:github_graphql_api/shared/strings/strings.dart';
 
-import '../components/challenge_button.dart';
+import '../components/default_button.dart';
 
 class GetUserInfoScreen extends StatefulWidget {
   const GetUserInfoScreen({super.key, required this.localStorage});
